@@ -2,12 +2,20 @@
   "name": "jose-cocert-hall",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Evan-Alexander.github.io/concert-landing-page",
   "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^1.1.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-reveal": "^1.2.2",
+    "react-scripts": "2.1.1",
+    "react-scroll": "^1.7.9",
+    "react-slick": "^0.23.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -21,5 +29,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
